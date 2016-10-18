@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>React Webpack Template Title</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+</head>
+<body>
+  <div id="app" class="content">APPLICATION CONTENT</div>
+
+  <script>
+  //因为开发的代码是以iframe的形式嵌入的，所以需要将外面父级窗口的HOOK变量赋值为当前框架内部的HOOK变量
+  __REACT_DEVTOOLS_GLOBAL_HOOK__ = parent.__REACT_DEVTOOLS_GLOBAL_HOOK__    
+  </script>
+  <script type="text/javascript" src="/assets/app.js"></script>
+</body>
+</html>
